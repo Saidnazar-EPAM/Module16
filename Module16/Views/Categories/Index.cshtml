@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Module16.Models.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h1>Categories</h1>
+
+
+<ul>
+@foreach (var item in Model) {
+        <li>
+            @item.CategoryName - @item.Description
+        </li>
+}
+</ul>
+
